@@ -4,9 +4,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Movie Tickets</title>
 </head>
 <body>
-  
+  <main>
+    <div class="big-container">
+      <h1>Choose your plan!</h1>
+      <form>
+      <label>What kind a plan do you want?</label>
+        <span><input type="radio" name="ticket">Just a ticket</span>
+        <span><input type="radio" name="ticket">A ticket + Popcorn + drink</span>
+        <span><input type="radio" name="ticket">A ticket + Nachos + drink</span>
+
+        <p>How many people?</p>
+        <input type="text"  id="people">
+
+        <p>Did you like our service?</p>
+        <select id="id">
+          <option value="0.00" selected>No tip</option>
+          <option value="0.10">It was oookay</option>
+          <option value="0.18">Good service!</option>
+          <option value="0.25">Excellent</option>
+        </select>
+
+        <button>Add tip</button>
+        <button>Calculate</button>
+</form>
+
+<div class="container-calc">
+
+  <div class="box-calc">
+    <span>$</span>
+    <span id="perPerson"></span>
+    <span>per person</span>
+  </div>
+
+  <div class="box-calc">
+    <span>$</span>
+    <span id="tipPerPerson"></span>
+    <span>per person</span>
+  </div>
+
+  <div class="box-calc">
+    <span>$</span>
+    <span id="total"></span>
+    <span>per person</span>
+  </div>
+
+
+</div>
+
+    </div>
+
+    
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

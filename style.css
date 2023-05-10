@@ -32,6 +32,8 @@ main {
 
 h1 {
 font-size: 2.4rem;
+margin-bottom: 1rem;
+color: #FF6000;
 }
 
 form {
@@ -119,4 +121,21 @@ color: #fff;
 
 #tip-box {
   display: none;
+}
+
+@media all and (max-width: 37em) {
+  .big-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-calc {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .box-calc {
+    height: 5.6rem;
+  }
 }

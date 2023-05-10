@@ -37,13 +37,13 @@ if (tickop3.checked) {
   priceTicket = 17;
 }
 
-document.querySelector('#perPerson').textContent = priceTicket.toFixed(2);
+document.querySelector('#perPerson').textContent = `$ ${priceTicket.toFixed(2)}`;
 
 let amoutTipPerPerson = (priceTicket * tip) + priceTicket;
-document.querySelector('#tipPerPerson').textContent = amoutTipPerPerson.toFixed(2);
+document.querySelector('#tipPerPerson').textContent = `$ ${amoutTipPerPerson.toFixed(2)}`;
 
 let amountTotal = amoutTipPerPerson * people;
-document.querySelector('#total').textContent = amountTotal.toFixed(2);
+document.querySelector('#total').textContent = `$ ${amountTotal.toFixed(2)}`;
  
 
 }
